@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="Style3.css">
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>SUSUWATARI.CRAFT <img src="img/logoterminado.png" width="60" height="50"></h1>
+        <div class="cart">
+            <a href="#" id="cart-link">Carrito (<span id="cart-count">0</span>) <img src="img/pngwing.com (13).png" alt="carrito" width="30" height="25"> </a>
+        </div>
+    </header>
+        <center><h2><u>Diseños Predeterminados</u></h2></center>
+    <main>
+        <section class="products">
+
+            <div class="product" data-id="1">
+                <img class="img1" src="img/Acrylic custome.jpeg" alt="Producto1">
+                <h3>Cuadro tipo lampara</h3>
+                <p>Bs55.00</p> 
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+            <div class="product" data-id="2">
+                <img class="img1" src="img/Elefantes 4 - Conjunto de 5 Elefantes em Madeira.jpeg" alt="Producto 2">
+                <h3>Elefante de madera</h3>
+                <p>Bs40.00</p> 
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+            <div class="product" data-id="3">
+                <img class="img1" src="img/Christmas Mailbox E0018050 File Cdr And Dxf Free Vector Download For Laser Cut.jpeg" alt="Producto 3">
+                <h3>Buzón de madera</h3>
+                <p>Bs35.00</p> 
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+            <div class="product" data-id="4">
+                <img class="img1" src="img/Cake Topper.jpeg" alt="Producto 4">
+                <h3>Recuerdo Matrimonio</h3>
+                <p>Bs45.00</p> 
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="product" data-id="5">
+                <img class="img1" src="img/9dc42641-b9b4-44e1-97f2-6a733e0f635f.jpeg" alt="Producto 5">
+                <h3>Llavero de madera</h3>
+                <p>Bs3.00</p> 
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+            <div class="product" data-id="6">
+                <img class="img1" src="img/Acrílico personalizado (1).jpeg" alt="Producto 6">
+                <h3>Llavero de acrílico</h3>
+                <p>Bs7.00</p> 
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+            <div class="product" data-id="7">
+                <img class="img1" src="img/Porta llaveros personalizados Republica Dominicana (1).jpeg" alt="Producto 7">
+                <h3>Posa llavero MDF</h3> 
+                <p>Bs40.00</p> 
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+            <div class="product" data-id="8">
+                <img class="img1" src="img/550fda9b-9034-433e-911d-825bcc86e382.jpeg" alt="Producto 8">
+                <h3>Llavero de acrílico</h3>
+                <p>Bs7.00</p> 
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="product" data-id="9">
+                <img class="img1" src="img/0c646f5a-dd42-44d1-be2b-5967496a43f5.jpeg" alt="Producto 9">
+                <h3>Recuerdo de XV</h3>
+                <p>Bs50.00</p> 
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+            <div class="product" data-id="10">
+                <img class="img1" src="img/Made by Ö_ Y_.jpeg" alt="Producto 10">
+                <h3>Cuadro de MDF</h3>
+                <p>Bs50.00</p> 
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+            <div class="product" data-id="11">
+                <img class="img1" src="img/Medallas personalizadas.jpeg" alt="Producto 11">
+                <h3>Medalla personalizada</h3>
+                <p>Bs19.00</p> 
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+            <div class="product" data-id="12">
+                <img class="img1" src="img/6bfd966c-0847-4034-b762-266dd25aee0e.jpeg" alt="Producto 12">
+                <h3>Llavero de madera</h3>
+                <p>Bs2.90</p> 
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+        </section>
+
+        <section class="cart-section hidden">
+            <h2>Tu Carrito</h2>
+            <div id="cart-items"></div>
+            <p>Total: Bs<span id="cart-total">0.00</span></p>
+            <button id="checkout">Ir a pagar</button>
+        </section>
+    </main>
+
+    <script src="java.js"></script>
+</body>
+</html>

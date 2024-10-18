@@ -1,0 +1,131 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+.img1{
+    height: 600px;
+    width: 1400px;
+    padding: 50px; 
+    margin: 50px;
+}
+
+.navbar {
+    background-color: #ffc107;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+    color: #dc0000;
+    margin-right: 10px;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/pngtree-aesthetic-wood-floor-texture-background-image_13701622.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.hero .btn {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #ff6f61;
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hero .btn:hover {
+    background-color: #e63946;
+}
+
+.productos h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.productos .card {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.productos .card:hover {
+    transform: scale(1.05);
+}
+
+.productos .card-title {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.productos .btn {
+    background-color: #ff6f61;
+    color: white;
+}
+
+.productos .btn:hover {
+    background-color: #e63946;
+}
+
+.nosotros {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+.nosotros h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.contacto form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contacto .btn {
+    background-color: #ff6f61;
+    color: #fff;
+}
+
+.contacto .btn:hover {
+    background-color: #e63946;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    font-size: 1.2rem;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: #ffc107;
+}

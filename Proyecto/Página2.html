@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="Style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="img/pngwing.com (13).png">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="node_modules/bootstrap/dist/js/boostrap.bundle.js"></script>
+</head>
+<body>
+    <header>
+        <h1>SUSUWATARI.CRAFT <img src="img/logoterminado.png" width="60" height="50"> </h1> 
+        <nav>
+            <ul>
+                <li><a href="C:\Proyecto\Página.html">Inicio</a></li>
+                <li><a href="C:\Proyecto\pagina3.html">Productos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="pago">
+            <h2>Métodos de Pago</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="tarjeta">Número de Tarjeta:</label>
+                <input type="text" id="tarjeta" name="tarjeta" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+
+                <label for="vencimiento">Fecha de Vencimiento:</label>
+                <input type="month" id="vencimiento" name="vencimiento" required>
+
+                <h3>Otras opciones de pago:</h3>
+                <input type="radio" id="paypal" name="metodo_pago" value="paypal" required>
+                <label for="paypal">PayPal</label><br>
+
+                <input type="radio" id="transferencia" name="metodo_pago" value="transferencia" required>
+                <label for="transferencia">Transferencia Bancaria</label><br>
+
+                <input type="radio" id="efectivo" name="metodo_pago" value="efectivo" required>
+                <label for="efectivo">Pago contra entrega</label><br>
+                <button type="submit">Pagar</button>
+            </form>
+        </section>
+    </main>
+    
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              PayPal
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Pagos por PayPal.</strong> Para realizar pagos con PayPal, puedes seguir estos pasos: <br>
+              Ingresa al enlace de PayPal.Me que te enviaron o escríbelo en el navegador <br>
+              - Haz clic en "Enviar" <br>
+              - Ingresa el monto a pagar <br>
+              - Agrega una nota opcional <br>
+              - Haz clic en "Continuar" <br>
+              - Selecciona "Enviar a un amigo" o "Pagar por un artículo o servicio" <br>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Transferencia Bancaria
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Pagos por transferencia bancaria</strong> Para realizar pagos con transferencias bancarias en Banco Unión,<br> 
+              se puede seguir el siguiente procedimiento: 
+              <br>
+              - Iniciar sesión en la cuenta bancaria por internet <br>
+              - Ir a "Servicios electrónicos" <br>
+              - Hacer clic en "Transferencia de cuenta de ahorros" <br>
+              - Ingresar el código IFSC de la nueva sucursal <br>
+              - Hacer clic en "Continuar" <br>
+              - Enviar la solicitud <br>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Pago contra entrega
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Pago contra entrega</strong> Un pago contra entrega es un método de pago en el que el comprador paga el  <br>producto al momento de recibirlo en su domicilio. También se le conoce como pago en casa o flete contra entrega. <br> 
+              - Es una opción de pago que se utiliza con frecuencia en el comercio electrónico y que tiene varias ventajas, entre ellas: <br>
+              - Permite a los clientes inspeccionar el producto antes de pagar.  <br>
+              - Es una opción para quienes prefieren los métodos de pago tradicionales. <br>
+              - Permite llegar a clientes que no tienen tarjeta de crédito o prefieren pagar en efectivo. <br>
+              - Aumenta la tasa de conversión, ya que elimina la barrera de la inseguridad al pagar en línea. <br>
+              Si el cliente no puede o no quiere recibir el pedido, el paquete será devuelto y el comprador deberá o no <br> pagar el envío de regreso, dependiendo de la transportadora. 
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <footer>
+        <p>&copy; 2024 SUSUWATARI.CRAFT. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
